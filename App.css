@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+}
+#main {
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100%;
+  background-color: black;
+}
+
+#main > form {
+  display: flex;
+  flex: 1;
+  width: 100%;
+  align-items: stretch;
+}
+
+#add-notes,
+#recent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  flex: 1;
+  /* max-width: 42%; */
+  padding: 20px;
+}
+
+.vertical-line {
+  width: 2px;
+  flex: 0 0 2px;
+  background-color: white;
+  align-self: stretch;
+  min-height: 100vh;
+}
+#add-notes button, #heading{
+  background-color: white;
+  width: 95%;
+  height: 35px;
+  border: none;
+  border-radius: 6px;
+}
+#add-notes button{
+  color: black;
+}
+#heading{
+  color: white;
+  background: transparent;
+  border: solid 2px white;
+}
+#details {
+  color: white;
+  background: transparent;
+  border: solid 2px white;
+  width: 95%;
+  height: 150px;
+  padding-top: 7px;
+  border-radius: 6px;
+  text-align: left;
+  font-size: 15px;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+img{
+  height: 180px;
+}
+.first-image {
+  position: relative;
+  display: inline-flex;
+}
+#img-div{
+  /* margin-left: 20px; */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  align-items: flex-start;
+}
+.overlay{
+  color: white;
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+}
+.overlay h3,
+.overlay p {
+  margin-right: 8px;
+  color: black;
+  text-align: center;
+}
